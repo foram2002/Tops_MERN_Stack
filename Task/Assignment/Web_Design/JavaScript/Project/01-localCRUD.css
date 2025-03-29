@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+.container{
+    width:fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+   
+    background-color: rgba(128, 128, 128, 0.825);
+    padding: 15px 50px;
+    margin: 0 auto;
+    border-radius: 20px;
+    /* border: 2px solid #854f6c; */
+    border: 2px solid skyblue;
+}
+/* label and the input  */
+.label{
+    display: flex;
+}
+/* form label*/
+.head{
+    width: 120px;
+    font-weight: 700;
+}
+/* user input */
+.user-input{
+    width: 200px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+/* button div*/
+.btn{
+    align-self: center;
+    padding: 25px 0;
+}
+/* button  */
+.btn>input{
+    padding: 7px 25px;
+    border: none;
+    border-radius: 5px;
+    /* font-size: 13px; */
+    /* background-color: #854f6c; */
+    background-color: orangered;
+    /* background-color: rgba(255, 68, 0, 0.653); */
+    color: #ffff;
+}
+/* table heading */
+.data>table>thead>tr>th{
+    color:black;
+    font-weight: 900;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+/* table data */
+.data>table>tbody{
+    font-size: 15px;
+    text-align: center;
+}
+/* center table */
+.data{
+    align-self: center;
+}
+/* form heading */
+.form-tittle{
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 25px 0;
+}
+/* radio button */
+.gen{
+    padding-left: 5px;
+    font-weight: 700;
+}

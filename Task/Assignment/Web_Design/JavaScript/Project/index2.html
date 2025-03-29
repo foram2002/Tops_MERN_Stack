@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Local Storage</title>
+    <link rel="stylesheet" href="01-localCRUD.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="nest-container">
+            <form action="" method="post" name="frm">
+                <div class="container">
+                    <div class="form-tittle">User Registration Form</div>
+                    <input type="hidden" name="id" id="id">
+                    <div class="label">
+                        <div class="head">Name</div>
+                        <div class=""><input type="text" name="fname" id="name" class="user-input" placeholder="enter your name"></div>
+                    </div>
+                    <div class="label">
+                        <div class="head">Email Address</div>
+                        <div class=""><input type="text" name="" id="email" class="user-input" placeholder="enter your email"></div>
+                    </div>
+                    <div class="label">
+                        <div class="head">Password</div>
+                        <div class=""><input type="password" name="" id="Password" class="user-input" placeholder="enter your password"></div>
+                    </div>
+                    <div class="label">
+                        <div class="head">Age</div>
+                        <div class=""><input type="number" name="age" id="age" class="user-input" placeholder="enter your age"></div>
+                    </div>
+                    <div class="label">
+                        <div class="head"> Gender</div>
+                        <div class="">
+                            <input type="radio" name="gender" id="gender1" value="male"><span class="gen">male</span>
+                            <input type="radio" name="gender" id="gender2" value="female"><span class="gen">female</span>
+                        </div>  
+                    </div>
+                    <div class="btn">
+                        <input type="button" value="Save" onclick="saveData()">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="data" >
+            <table border="1" cellpadding="10px" style="background-color: #ffffff6c;border:none;"> 
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NAME</th>
+                        <th>EMAIL</th>
+                        <th>AGE</th>
+                        <th>GENDER</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <tbody id="allData"></tbody>
+            </table>
+        </div>
+    </div>
+    <!-- --------jquery file----- -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <!-- -----------external javascript---- -->
+    <script src="01-local_crud.js"></script>
+</body>
+
+</html>
